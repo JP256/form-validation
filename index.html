@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>myForm</h1>
+    <!-- FORM -->
+    <form action="" class="form" id="form">
+      <!-- USER -->
+      <div class="form__user">
+        <label for="user" class="form__label">User</label>
+        <div class="input__user inputs">
+          <input
+            type="text"
+            id="user"
+            class="user"
+            name="user"
+            placeholder="John001"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, 3-10 characters and no symbols.
+        </p>
+      </div>
+      <!-- NAME -->
+      <div class="form__name">
+        <label for="name" class="form__label">Name</label>
+        <div class="input__name inputs">
+          <input
+            type="text"
+            id="name"
+            class="name"
+            name="name"
+            placeholder="John Doe"
+          />
+          <i class="fa-solid fa-circle-check correct-message"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, the name cannot contan symbols or numbers.
+        </p>
+      </div>
+      <!-- PASSWORD -->
+      <div class="form__password">
+        <label for="password" class="form__label">Password</label>
+        <div class="input__password inputs">
+          <input
+            type="password"
+            id="password"
+            class="password"
+            name="password"
+          />
+          <i class="fa-solid fa-circle-check correct-message"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, the password must contain 4 to 16 characteres.
+        </p>
+      </div>
+      <!-- PASSWORD REPEAT -->
+      <div class="form__password2">
+        <label for="password2" class="form__label">Repeat Password</label>
+        <div class="input__password2 inputs">
+          <input
+            type="password"
+            id="password2"
+            class="password2"
+            name="password2"
+          />
+          <i class="fa-solid fa-circle-check correct-message"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, both passwords must match.
+        </p>
+      </div>
+      <!-- EMAIL -->
+      <div class="form__email">
+        <label for="email" class="form__label">Email Address</label>
+        <div class="input__email inputs">
+          <input
+            type="email"
+            id="email"
+            class="email"
+            name="email"
+            placeholder="john@doe.com"
+          />
+          <i class="fa-solid fa-circle-check correct-message"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, email doesn't match the format.
+        </p>
+      </div>
+      <!-- PHONE NUMBER -->
+      <div class="form__phone">
+        <label for="phone" class="form__label">Phone Number</label>
+        <div class="input__phone inputs">
+          <input
+            type="text"
+            id="phone"
+            class="phone"
+            name="phone"
+            placeholder="305-222-4400"
+          />
+          <i class="fa-solid fa-circle-check correct-message"></i>
+        </div>
+        <p class="input__error__message">
+          Incorrect, phone number doesn't match the format.
+        </p>
+      </div>
+      <!-- TERMS -->
+      <div class="form__terms">
+        <label for="terms">
+          <input type="checkbox" id="terms" />
+          Accept All Terms And Conditions.
+        </label>
+      </div>
+      <!-- ERROR MISSING FIELDS -->
+      <div class="form__missing__fields">
+        <i class="fa-solid fa-triangle-exclamation"></i> Error: Please fill all
+        fields before submitting.
+      </div>
+      <!-- SUBMIT BUTTON -->
+      <div class="form__submit-button">
+        <button type="submit">Send</button>
+        <!-- FORM SENT SUCCESSFUL -->
+        <p class="button__message">Successfully Sent.</p>
+      </div>
+    </form>
+    <!-- FONT AWSOME -->
+    <script
+      src="https://kit.fontawesome.com/e80b6bb67b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MY JS -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

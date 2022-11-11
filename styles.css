@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 80px 0 15px 0;
+  text-align: center;
+}
+.form {
+  border: solid 1px grey;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  padding: 10px;
+  gap: 10px;
+  background-color: #d3d3d3;
+}
+.form__user,
+.form__name {
+  margin-top: 20px;
+}
+.form__label {
+  font-weight: 700;
+}
+.inputs {
+  position: relative;
+}
+.inputs input {
+  height: 28px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  width: 90%;
+  outline: none;
+}
+.inputs i {
+  position: absolute;
+  top: 6px;
+  right: 12%;
+  color: lightseagreen;
+  opacity: 0;
+}
+.input__error__message {
+  font-size: 11px;
+  color: red;
+  opacity: 0;
+}
+
+.form__terms,
+.form__missing__fields,
+.form__submit-button {
+  grid-column: span 2;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form__missing__fields {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 2px;
+  opacity: 0;
+}
+.form__submit-button {
+  text-align: center;
+}
+.form__submit-button button {
+  width: 200px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+.form__submit-button button:hover {
+  box-shadow: 0 0 10px 1px #322f2f;
+}
+.form__submit-button button:active {
+  background-color: #fff;
+  color: #000;
+}
+.button__message {
+  color: darkgreen;
+  font-weight: bold;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+/* CHANGES TO BE MADE BY JS */
+.input--incorrect input {
+  border: 1px solid red;
+}
+.input--incorrect i {
+  color: red;
+  opacity: 1;
+}
+.input--incorrect p {
+  opacity: 1;
+}
+.input--incorrect label {
+  color: red;
+}
+.input--correct i {
+  color: darkgreen;
+  opacity: 1;
+}
+/* <i class="fa-solid fa-circle-check"></i> */
+/* <i class="fa-solid fa-circle-xmark"></i> */
+
+@media screen and (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form__terms,
+  .form__missing__fields,
+  .form__submit-button {
+    grid-column: 1;
+  }
+}
